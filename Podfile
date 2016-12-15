@@ -1,0 +1,13 @@
+platform :ios , '7.0'
+pod 'AFNetworking'
+pod 'MJExtension'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'MBProgressHUD'
+pod 'UMengFeedback', '~> 2.3.4'
+pod "WeiboSDK", :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git"
+pod 'ShareSDK2'
+pod 'ShareSDK2/UI/iPadSimple'
+pod 'ShareSDK2/UI/iPhoneSimple'
+pod 'ShareSDK2/Connection/SinaWeibo'
+pod 'ShareSDK2/Connection/WeChat'

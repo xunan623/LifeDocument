@@ -118,19 +118,17 @@
     param[@"page"] = @(self.page);
     param[@"ap"] = @"jlp";
     param[@"ver"] = @(1.7);
-    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
-    [session GET:AppRequestURL parameters:param progress:^(NSProgress * _Nonnull downloadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    
+    [[XNNetwork sharedInstance] requestWithPath:@"" params:param class:nil successBlock:^(id x) {
         // 结束刷新
         [self.tableView.mj_footer endRefreshing];
-        NSArray *dataArr = (NSArray *)responseObject;
+        NSArray *dataArr = (NSArray *)x;
         
         [self.dataArray addObjectsFromArray:dataArr];
         
         // 刷新数据
         [self.tableView reloadData];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failedBlock:^(NSError *error) {
         // 结束刷新
         [self.tableView.mj_footer endRefreshing];
         NSLog(@"%@",error);

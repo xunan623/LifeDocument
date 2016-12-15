@@ -35,6 +35,7 @@
 		71C8F7311C216A5200754580 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C8F7301C216A5200754580 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; };
 		71C8F7371C216A8500754580 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C8F7341C216A8500754580 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		71C8F7381C216A8500754580 /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C8F7361C216A8500754580 /* WXMediaMessage+messageConstruct.m */; };
+		71EF29561E023DF200491834 /* XNNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EF29551E023DF200491834 /* XNNetwork.m */; };
 		71FBB23F1C1FA940008CF74B /* XNMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FBB23E1C1FA940008CF74B /* XNMoreCell.m */; };
 		71FBB2421C1FB3C3008CF74B /* XNClearCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FBB2411C1FB3C3008CF74B /* XNClearCache.m */; };
 		71FBB2451C1FB748008CF74B /* XNHomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FBB2441C1FB748008CF74B /* XNHomeDetailViewController.m */; };
@@ -104,6 +105,8 @@
 		71C8F7341C216A8500754580 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
 		71C8F7351C216A8500754580 /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
 		71C8F7361C216A8500754580 /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
+		71EF29541E023DF200491834 /* XNNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNNetwork.h; sourceTree = "<group>"; };
+		71EF29551E023DF200491834 /* XNNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNNetwork.m; sourceTree = "<group>"; };
 		71FBB23D1C1FA940008CF74B /* XNMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNMoreCell.h; sourceTree = "<group>"; };
 		71FBB23E1C1FA940008CF74B /* XNMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNMoreCell.m; sourceTree = "<group>"; };
 		71FBB2401C1FB3C3008CF74B /* XNClearCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNClearCache.h; sourceTree = "<group>"; };
@@ -167,6 +170,7 @@
 		714B1CB81C1E75220092765D /* LifeDocument */ = {
 			isa = PBXGroup;
 			children = (
+				71EF29531E023DDD00491834 /* Network */,
 				715C53691C1E9B7400DB8A83 /* lib */,
 				714B1CF81C1E76490092765D /* Main */,
 				714B1CF41C1E76260092765D /* more */,
@@ -420,6 +424,15 @@
 			path = helper;
 			sourceTree = "<group>";
 		};
+		71EF29531E023DDD00491834 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				71EF29541E023DF200491834 /* XNNetwork.h */,
+				71EF29551E023DF200491834 /* XNNetwork.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -556,6 +569,7 @@
 				71117CB81C1E85B200A692F7 /* XNTabBarViewController.m in Sources */,
 				71117CBB1C1E867200A692F7 /* XNHomeViewController.m in Sources */,
 				715ADAA61DFFEE4600131206 /* XNAppURL.m in Sources */,
+				71EF29561E023DF200491834 /* XNNetwork.m in Sources */,
 				7102319C1C1EFA8C0039661B /* XNCategoryCell.m in Sources */,
 				719CDFBA1C203A24004DC31F /* HWAccount.m in Sources */,
 				71FBB2421C1FB3C3008CF74B /* XNClearCache.m in Sources */,
